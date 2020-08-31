@@ -1,0 +1,11 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ngrx-schema": {
+      "aliases": ["my-ngrx"],
+      "description": "A ngrx schematic prepered by Jujek.",
+      "factory": "./ngrx-schema/index",
+      "schema": "./ngrx-schema/schema.json"
+    }
+  }
+}
