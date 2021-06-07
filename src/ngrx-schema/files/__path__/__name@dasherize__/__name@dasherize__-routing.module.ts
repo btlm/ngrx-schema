@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {<%=classify(name)%>PageComponent} from './containers';
-import {AuthGuard} from '../auth/services';
+import {AuthGuard} from '../auth/service';
 
 const routes: Routes = [{path: '<%=dasherize(name)%>', component: <%=classify(name)%>PageComponent, canActivate: [AuthGuard]}];
 

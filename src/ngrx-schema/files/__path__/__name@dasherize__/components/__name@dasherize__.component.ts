@@ -5,7 +5,7 @@ import { <%=classify(name)%> } from '../models/<%=dasherize(name)%>.model';
 @Component({
     selector: 'app-<%=dasherize(name)%>',
     templateUrl: './<%=dasherize(name)%>.component.html',
-    styleUrls: ['./<%=dasherize(name)%>.component.css']
+    styleUrls: ['./<%=dasherize(name)%>.component.scss']
 })
 export class <%=classify(name)%>Component implements OnInit, OnChanges, OnDestroy {
     @Input() <%=camelize(name)%>: <%=classify(name)%>;
