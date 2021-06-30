@@ -3,7 +3,7 @@ import {Router} from '@angular/router';
 import {Actions, createEffect, ofType} from '@ngrx/effects';
 import * as from<%=classify(name)%> from '../reducers/';
 import {Store} from '@ngrx/store';
-import {<%=classify(name)%>Service} from '../service';
+import {<%=classify(name)%>Service} from '../services';
 import { catchError, map, switchMap } from 'rxjs/operators';
 import { of } from 'rxjs';
 import { <%=classify(name)%>PageActions, <%=classify(name)%>ApiActions } from '../actions';
