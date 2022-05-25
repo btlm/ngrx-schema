@@ -1,4 +1,4 @@
-import {createAction, props} from '@ngrx/store';
+import {createAction} from '@ngrx/store';
 
 
 export const get<%=classify(name)%> = createAction(

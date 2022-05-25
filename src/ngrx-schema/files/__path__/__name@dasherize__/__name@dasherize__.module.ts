@@ -8,13 +8,16 @@ import * as from<%=classify(name)%> from './reducers';
 import { <%=classify(name)%>Effects } from './effects';
 import { <%=classify(name)%>RoutingModule } from './<%=dasherize(name)%>-routing.module';
 import { <%=classify(name)%>Component } from './components';
-import { <%=classify(name)%>PageComponent } from './containers';
+import { <%=classify(name)%>PageComponent } from './PAGES';
 
 
 export const COMPONENTS = [
     <%=classify(name)%>Component,
-    <%=classify(name)%>PageComponent
 ];
+
+export const PAGES = [
+  <%=classify(name)%>PageComponent
+]
 
 @NgModule ({
   imports: [
@@ -25,7 +28,7 @@ export const COMPONENTS = [
     StoreModule.forFeature(from<%=classify(name)%>.<%=camelize(name)%>FeatureKey, from<%=classify(name)%>.reducers),
     EffectsModule.forFeature([<%=classify(name)%>Effects]),
   ],
-  declarations: COMPONENTS,
+  declarations: [...COMPONENTS, ...PAGES],
   providers: []
 })
 export class <%=classify(name)%>Module {}
